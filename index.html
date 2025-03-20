@@ -44,24 +44,24 @@
     <main class="max-w-[1440px] mx-auto flex gap-6 mb-5">
         <!--Left Side-->
 
-        <div class="min-w-3/4 grid grid-cols-3 gap-8 ">
+        <div class="min-w-[70%] grid grid-cols-3 gap-8 ">
             <!-- Triangle -->
             <div class="card bg-base-100  shadow-sm hover:bg-[#FBBCED] ">
                 <figure class="px-10 pt-10">
                     <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                    <h2 class="card-title font-inter font-bold text-[#414141] text-2xl">Triangle</h2>
+                    <h2 id="shapeName" class="card-title font-inter font-bold text-[#414141] text-2xl">Triangle</h2>
                     <p>Area (A) = 0.5 X b X h</p>
                     <!-- input filed -->
                     <div class="flex justify-center items-center gap-3 mb-12 mt-6 ">
-                        <input type="text" placeholder="b" class="w-24 px-2 py-3 rounded bg-[#F1F1F1] border-none placeholder:text-[#414141]" />
+                        <input type="text" placeholder="b" id="firstnumber" class="w-24 px-2 py-3 rounded bg-[#F1F1F1] border-none placeholder:text-[#414141]" />
                         <span>cm</span>
-                        <input type="text" placeholder="h" class="w-24 px-2 py-3 rounded bg-[#F1F1F1] border-none placeholder:text-[#414141]" />
+                        <input type="text" placeholder="h" id="secondnumber" class="w-24 px-2 py-3 rounded bg-[#F1F1F1] border-none placeholder:text-[#414141]" />
                         <span>cm</span>
                     </div>
                     <div class="card-actions">
-                        <button class="btn bg-[#1090D8] text-white text-xl px-20 py-4 border-none">Calculate</button>
+                        <button id="btn-calculate" class="btn bg-[#1090D8] text-white text-xl px-20 py-4 border-none btn-calculate">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -170,11 +170,13 @@
 
 
         <!--Right Side-->
-        <div class="w-full border rounded-sm p-9">
-            <h2 class="text-center border-b text-xl font-bold">Area Calculation</h2>
+        <div id="viweDisplay" class="w-full   border rounded-sm p-9">
+            <h2 class="text-center border-b text-xl  font-bold">Area Calculation</h2>
+                       
         </div>
     </main>
     <footer></footer>
+    <script src="./Script/Calculation.js"></script>
 
 </body>
 
