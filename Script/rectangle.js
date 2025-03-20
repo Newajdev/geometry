@@ -1,21 +1,21 @@
 
-document.getElementById('btn-calculate').addEventListener('click', function () {
+document.getElementById('rectangle-calculate').addEventListener('click', function () {
 
-    const firstinput = document.getElementById('firstnumber');
+    const firstinput = document.getElementById('rec-width');
     const firstValue = firstinput.value;
     const ConvertedFirstValu = parseFloat(firstValue);
 
-    const secondinput = document.getElementById('secondnumber');
+    const secondinput = document.getElementById('rec-length');
     const secondValue = secondinput.value;
     const ConvertedSecondValu = parseFloat(secondValue);
 
 
 
-    const AreaCalculation = 0.5 * ConvertedFirstValu * ConvertedSecondValu;
+    const AreaCalculation = ConvertedFirstValu * ConvertedSecondValu;
     // console.log(AreaCalculation);
 
 
-    const shapeName = document.getElementById('shapeName');
+    const shapeName = document.getElementById("rectangle");
     const headofthedisplay = document.getElementById('viweDisplay');
 
     const container = document.createElement('div'); //-1st parent
@@ -80,7 +80,7 @@ function covertion(){
     
     const AreaInMiter = AreaCalculation/100;
 
-    const shapeName = document.getElementById('shapeName');
+    const shapeName = document.getElementById('rectangle');
     const headofthedisplay = document.getElementById('viweDisplay');
     
     const p = document.createElement('p');
